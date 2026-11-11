@@ -453,7 +453,6 @@ ascii-art {
 }
 
 .section-header h2,
-.focus-card h2,
 .contact-box h2 {
     font-size: 1.5rem;
 }
@@ -639,14 +638,9 @@ a.highlight-tag:hover {
     color: inherit;
 }
 
-/* AI Focus */
-.focus-card h2 {
-    margin-bottom: 16px;
-}
-
-.focus-card p:not(.prompt-line) {
-    max-width: 76ch;
-    font-size: 1rem;
+/* Projects */
+.projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* Contact */
@@ -762,7 +756,8 @@ footer .glyph {
         padding: 26px 16px 20px;
     }
 
-    .about-grid {
+    .about-grid,
+    .projects-grid {
         grid-template-columns: minmax(0, 1fr);
     }
 
@@ -817,7 +812,6 @@ footer .glyph {
     }
 
     .section-header h2,
-    .focus-card h2,
     .contact-box h2 {
         font-size: 1.25rem;
     }
