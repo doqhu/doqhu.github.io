@@ -6,22 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilia Gordeev | Senior Kotlin/Java Backend Engineer</title>
     <meta name="description"
-        content="Senior Software Engineer specializing in high-load MedTech backends and Kotlin/Java development.">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
-        rel="stylesheet">
+        content="Senior Kotlin/Java backend engineer in Barcelona: 6 years on an oncology patient-monitoring platform, health-system integrations, HL7 CDA, and my own Kotlin Multiplatform and Rust products.">
+    <meta name="theme-color" content="#0a0803">
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Sets the `js` class before first paint; the rest waits for DOMContentLoaded -->
+    <script src="script.js"></script>
+    <!-- ASCII pieces: vendored from ascii.rest (MIT), see assets/ascii/README.md -->
+    <script type="module" src="assets/ascii/ascii.js"></script>
 </head>
 
 <body>
-    <div class="fixed-background"></div>
-
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">IG<span class="dot">.</span></a>
@@ -29,7 +24,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#stack">Tech Stack</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#ai-focus">AI Focus</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact" class="btn btn-sm">Contact</a></li>
             </ul>
         </div>
@@ -39,58 +34,92 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-content">
-                <div class="hero-text fade-in-up">
+                <div class="hero-text">
+                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> whoami</p>
                     <div class="badge">Open for Work</div>
-                    <h1>kotlin/java <span class="gradient-text">backend</span> <br> engineer</h1>
-                    <p class="subtitle">Building mission-critical systems that cannot fail.</p>
+                    <h1>kotlin/java <span class="accent">backend</span> <br> engineer</h1>
+                    <p class="subtitle">Untangling legacy-heavy, integration-heavy systems and modernizing them step by step.</p>
+                    <ascii-art class="piece piece-typewriter" piece="typewriter"
+                        options='{"prefix":"> ","phrases":["oncology patient monitoring","health-system integrations","hl7 cda document exchange","java to kotlin migration","llm microservices","kotlin multiplatform apps"]}'
+                        label="Typewriter cycling through specialities">
+                        <pre role="img" aria-label="Typewriter cycling through specialities">
+
+      &gt; oncology patient monitoring▌
+</pre>
+                    </ascii-art>
                     <div class="cta-group">
                         <a href="assets/Ilia_Gordeev_Java_Kotlin_Software_Engineer_CV.pdf" class="btn btn-primary"
                             download>
-                            <i class="fas fa-download"></i> Download CV
+                            <span class="glyph" aria-hidden="true">[v]</span> Download CV
                         </a>
-                        <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                        <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" target="_blank" rel="noopener"
+                            class="btn btn-outline">
+                            <span class="glyph" aria-hidden="true">[in]</span> LinkedIn
                         </a>
                     </div>
                 </div>
-                <div class="hero-visual fade-in-up delay-200">
-                    <!-- 3D/ Abstract Representation can go here, using a div for now -->
-                    <div class="hero-image-container">
-                        <img src="assets/IMG_9956.jpeg" alt="Ilia Gordeev" class="hero-image">
-                        <div class="glow-circle"></div>
-                    </div>
+                <div class="hero-visual">
+                    <figure class="frame photo-frame" data-title="IMG_9956.jpeg" data-tag="1261x1681">
+                        <span class="photo-tint"><img src="assets/IMG_9956.jpeg" alt="Ilia Gordeev"
+                                class="hero-image" width="1261" height="1681"></span>
+                    </figure>
+                    <ascii-art class="piece piece-terminal" piece="terminal" label="Animated terminal session">
+                        <pre role="img" aria-label="Terminal session">
+╭─ ilia@bcn: ~ ──────────────────────────────────────────────╮
+│ ilia@bcn ~ $ whoami                                        │
+│ ilia gordeev: senior kotlin/java backend engineer          │
+│ ilia@bcn ~ $ cat stack.txt                                 │
+│ backend  kotlin, java, spring boot, ktor, exposed, kafka   │
+│ integr   rest, soap, protobuf, xml/xsd, hl7 cda            │
+│ data     postgresql, orientdb, sql                         │
+│ mobile   kotlin multiplatform, compose multiplatform       │
+│ systems  rust, gtk 4, linux, flatpak                       │
+│ ai       python, vllm, local inference                     │
+│ ilia@bcn ~ $ uptime                                        │
+│ oncor (medtech): 6 years on oncology patient monitoring    │
+│ ilia@bcn ~ $ echo $TZ                                      │
+│ Europe/Madrid (CET), barcelona                             │
+│ ilia@bcn ~ $ █                                             │
+│                                                            │
+│                                                            │
+╰────────────────────────────────────────────────────────────╯</pre>
+                    </ascii-art>
                 </div>
             </div>
             <div class="scroll-indicator">
                 <span>Scroll</span>
-                <div class="mouse"></div>
+                <span class="glyph" aria-hidden="true">v</span>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about section-padding">
             <div class="container">
-                <div class="section-header fade-in-on-scroll">
-                    <h2>Meet <span class="highlight">Ilia</span></h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-card fade-in-on-scroll">
-                        <i class="fas fa-server icon-lg"></i>
-                        <h3>System Architect</h3>
-                        <p>Specializing in <strong>national-scale monitoring</strong> and high-throughput data streams
-                            with sub-200ms latency.</p>
+                <div class="panel fade-in-on-scroll" data-title="about.txt">
+                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> cat about.txt</p>
+                    <div class="section-header">
+                        <h2>Meet <span class="highlight">Ilia</span></h2>
                     </div>
-                    <div class="about-card fade-in-on-scroll delay-100">
-                        <i class="fas fa-code icon-lg"></i>
-                        <h3>Backend Specialist</h3>
-                        <p>Deep expertise in the <strong>Kotlin & Java</strong> ecosystem, building robust and
-                            maintainable services.</p>
-                    </div>
-                    <div class="about-card fade-in-on-scroll delay-200">
-                        <i class="fas fa-globe-europe icon-lg"></i>
-                        <h3>Global Mindset</h3>
-                        <p>Based in <strong>Barcelona (CET)</strong>. Ready for B2B/Contract work via US LLC (Wyoming).
-                        </p>
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <span class="icon-lg" aria-hidden="true">[::]</span>
+                            <h3>Integration Engineer</h3>
+                            <p>6 years on an <strong>oncology patient-monitoring platform</strong>: heavy integrations
+                                with national and regional health systems and medical document exchange (HL7 CDA).</p>
+                        </div>
+                        <div class="about-card">
+                            <span class="icon-lg" aria-hidden="true">&lt;/&gt;</span>
+                            <h3>Pragmatic Modernizer</h3>
+                            <p>I like messy, legacy-heavy <strong>Kotlin &amp; Java</strong> systems: find the real
+                                constraints, fix what hurts most, and modernize step by step instead of risking a big
+                                rewrite.</p>
+                        </div>
+                        <div class="about-card">
+                            <span class="icon-lg" aria-hidden="true">(@)</span>
+                            <h3>Product Builder</h3>
+                            <p>I ship my own products end to end, from architecture to app-store release. Based in
+                                <strong>Barcelona (CET)</strong>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,51 +128,100 @@
         <!-- Tech Stack Section -->
         <section id="stack" class="stack section-padding">
             <div class="container">
-                <div class="section-header fade-in-on-scroll">
-                    <h2>Tech <span class="highlight">Stack</span></h2>
-                </div>
-                <div class="stack-grid">
-                    <div class="stack-category fade-in-on-scroll">
-                        <h3>Core</h3>
-                        <div class="tags">
-                            <a href="https://kotlinlang.org/" target="_blank" class="tag">Kotlin</a>
-                            <a href="https://dev.java/" target="_blank" class="tag">Java 8-25</a>
-                            <a href="https://spring.io/projects/spring-boot" target="_blank" class="tag">Spring Boot</a>
-                        </div>
+                <div class="panel fade-in-on-scroll" data-title="stack/">
+                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> ls -l stack/</p>
+                    <div class="section-header">
+                        <h2>Tech <span class="highlight">Stack</span></h2>
                     </div>
-                    <div class="stack-category fade-in-on-scroll delay-100">
-                        <h3>Data</h3>
-                        <div class="tags">
-                            <a href="https://www.postgresql.org/" target="_blank" class="tag">PostgreSQL</a>
-                            <a href="https://orientdb.dev/" target="_blank" class="tag">OrientDB</a>
-                            <a href="https://github.com/JetBrains/Exposed" target="_blank" class="tag">JetBrains
-                                Exposed</a>
+                    <div class="stack-layout">
+                        <div class="stack-grid">
+                            <div class="stack-category">
+                                <h3>Backend</h3>
+                                <div class="tags">
+                                    <a href="https://kotlinlang.org/" target="_blank" rel="noopener" class="tag">Kotlin</a>
+                                    <a href="https://dev.java/" target="_blank" rel="noopener" class="tag">Java</a>
+                                    <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener" class="tag">Spring Boot</a>
+                                    <a href="https://ktor.io/" target="_blank" rel="noopener" class="tag">Ktor</a>
+                                    <a href="https://github.com/JetBrains/Exposed" target="_blank" rel="noopener" class="tag">Exposed</a>
+                                    <a href="https://kafka.apache.org/" target="_blank" rel="noopener" class="tag">Kafka</a>
+                                </div>
+                            </div>
+                            <div class="stack-category">
+                                <h3>Integration</h3>
+                                <div class="tags">
+                                    <span class="tag">REST</span>
+                                    <span class="tag">SOAP</span>
+                                    <a href="https://protobuf.dev/" target="_blank" rel="noopener" class="tag">Protobuf</a>
+                                    <span class="tag">JSON</span>
+                                    <span class="tag">XML/XSD</span>
+                                    <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7" target="_blank" rel="noopener" class="tag">HL7 CDA</a>
+                                </div>
+                            </div>
+                            <div class="stack-category">
+                                <h3>Data</h3>
+                                <div class="tags">
+                                    <a href="https://www.postgresql.org/" target="_blank" rel="noopener" class="tag">PostgreSQL</a>
+                                    <a href="https://orientdb.dev/" target="_blank" rel="noopener" class="tag">OrientDB</a>
+                                    <span class="tag">SQL</span>
+                                </div>
+                            </div>
+                            <div class="stack-category">
+                                <h3>Mobile</h3>
+                                <div class="tags">
+                                    <a href="https://kotlinlang.org/docs/multiplatform.html" target="_blank" rel="noopener" class="tag">Kotlin Multiplatform</a>
+                                    <a href="https://www.jetbrains.com/compose-multiplatform/" target="_blank" rel="noopener" class="tag">Compose Multiplatform</a>
+                                    <a href="https://firebase.google.com/" target="_blank" rel="noopener" class="tag">Firebase</a>
+                                </div>
+                            </div>
+                            <div class="stack-category">
+                                <h3>Systems</h3>
+                                <div class="tags">
+                                    <a href="https://www.rust-lang.org/" target="_blank" rel="noopener" class="tag">Rust</a>
+                                    <a href="https://www.gtk.org/" target="_blank" rel="noopener" class="tag">GTK 4</a>
+                                    <a href="https://www.kernel.org/" target="_blank" rel="noopener" class="tag">Linux</a>
+                                    <a href="https://flatpak.org/" target="_blank" rel="noopener" class="tag">Flatpak</a>
+                                </div>
+                            </div>
+                            <div class="stack-category">
+                                <h3>AI / LLM</h3>
+                                <div class="tags">
+                                    <a href="https://www.python.org/" target="_blank" rel="noopener" class="tag">Python</a>
+                                    <a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener" class="tag highlight-tag">vLLM</a>
+                                    <span class="tag">Local Inference</span>
+                                    <a href="https://claude.com/claude-code" target="_blank" rel="noopener" class="tag">Claude Code</a>
+                                </div>
+                            </div>
+                            <div class="stack-category">
+                                <h3>Delivery</h3>
+                                <div class="tags">
+                                    <a href="https://www.docker.com/" target="_blank" rel="noopener" class="tag">Docker</a>
+                                    <a href="https://github.com/features/actions" target="_blank" rel="noopener" class="tag">GitHub Actions</a>
+                                    <a href="https://gradle.org/" target="_blank" rel="noopener" class="tag">Gradle</a>
+                                    <a href="https://maven.apache.org/" target="_blank" rel="noopener" class="tag">Maven</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="stack-category fade-in-on-scroll delay-200">
-                        <h3>Performance</h3>
-                        <div class="tags">
-                            <a href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank"
-                                class="tag">Coroutines</a>
-                            <a href="https://protobuf.dev/" target="_blank" class="tag">Protobuf</a>
-                            <span class="tag">Async Processing</span>
-                        </div>
-                    </div>
-                    <div class="stack-category fade-in-on-scroll delay-300">
-                        <h3>AI & ML</h3>
-                        <div class="tags">
-                            <a href="https://github.com/vllm-project/vllm" target="_blank"
-                                class="tag highlight-tag">vLLM</a>
-                            <span class="tag">Local Inference</span>
-                            <span class="tag">RAG Pipelines</span>
-                        </div>
-                    </div>
-                    <div class="stack-category fade-in-on-scroll delay-400">
-                        <h3>Infra</h3>
-                        <div class="tags">
-                            <a href="https://www.docker.com/" target="_blank" class="tag">Docker</a>
-                            <a href="https://www.kernel.org/" target="_blank" class="tag">Linux</a>
-                            <span class="tag">CI/CD</span>
+                        <div class="stack-logos">
+                            <ascii-art class="piece piece-logo piece-kotlin" piece="kotlin" label="Kotlin logo">
+                                <pre role="img" aria-label="Kotlin logo">
+████████▀
+██████▀
+████▀
+██▀
+████▄
+██████▄
+████████▄</pre>
+                            </ascii-art>
+                            <ascii-art class="piece piece-logo piece-java" piece="java" label="Java logo">
+                                <pre role="img" aria-label="Java logo">
+   ( (
+    ) )
+ ┌───────┐
+ │       ├┐
+ │       ├┘
+ └───────┘
+ ─────────</pre>
+                            </ascii-art>
                         </div>
                     </div>
                 </div>
@@ -153,54 +231,93 @@
         <!-- Experience/Highlights Section -->
         <section id="experience" class="experience section-padding">
             <div class="container">
-                <div class="section-header fade-in-on-scroll">
-                    <h2>Key <span class="highlight">Highlights</span></h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item fade-in-on-scroll">
-                        <div class="timeline-content">
-                            <h3><a href="https://oncor.pro/" target="_blank" class="experience-link">Oncor (MedTech)</a>
-                            </h3>
-                            <p class="role">National Oncology Monitoring</p>
-                            <p>Architected backend for millions of patients with <strong>99.9% availability</strong>.
-                            </p>
-                        </div>
+                <div class="panel fade-in-on-scroll" data-title="highlights.log">
+                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> tail -n 4 highlights.log
+                    </p>
+                    <div class="section-header">
+                        <h2>Key <span class="highlight">Highlights</span></h2>
                     </div>
-                    <div class="timeline-item fade-in-on-scroll">
-                        <div class="timeline-content">
-                            <h3>Performance Optimization</h3>
-                            <p class="role">SQL & Graph Improvements</p>
-                            <p>Optimized reporting modules, reducing generation time by <strong>40%</strong>.</p>
+                    <div class="highlights-layout">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3><a href="https://oncor.pro/" target="_blank" rel="noopener"
+                                            class="experience-link">Oncor (MedTech)</a></h3>
+                                    <p class="role">Oncology Patient Monitoring</p>
+                                    <p>6 years building and running a hybrid backend with <strong>heavy integrations</strong> with national and regional health systems and business-critical workflows.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Medical Data Exchange</h3>
+                                    <p class="role">HL7 CDA &amp; Integrations</p>
+                                    <p>Built APIs and integrations over <strong>REST, SOAP, Protobuf and XML/XSD</strong>, on PostgreSQL and OrientDB.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>Modernization Leader</h3>
+                                    <p class="role">Java to Kotlin Migration</p>
+                                    <p>Led a migration that cut production bugs by <strong>~20%</strong> and sped up the team.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h3>LLM Microservice</h3>
+                                    <p class="role">Government Contract Analysis</p>
+                                    <p><strong>Batch inference</strong>, message-driven processing and containerized deployment.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item fade-in-on-scroll">
-                        <div class="timeline-content">
-                            <h3>High Scalability</h3>
-                            <p class="role">Low Latency APIs</p>
-                            <p>Designed APIs handling sensitive medical records with <strong>sub-200ms latency</strong>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in-on-scroll">
-                        <div class="timeline-content">
-                            <h3>Modernization Leader</h3>
-                            <p class="role">Java to Kotlin Migration</p>
-                            <p>Led migration reducing production bugs by <strong>20%</strong>.</p>
+                        <div class="uptime-slot">
+                        <ascii-art class="piece piece-uptime" piece="uptime-bar"
+                            options='{"services":["integrations","documents","records"]}' label="Animated uptime bars">
+                            <pre role="img" aria-label="Uptime bars">
+
+  all systems operational
+
+  integrations                                     operational
+  ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌
+
+  documents                                        operational
+  ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌
+
+  records                                          operational
+  ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌</pre>
+                        </ascii-art>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Current Focus AI Section -->
-        <section id="ai-focus" class="ai-focus section-padding">
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
             <div class="container">
-                <div class="focus-card fade-in-on-scroll">
-                    <div class="content">
-                        <h2>💡 Current Focus: <span class="gradient-text">AI Infrastructure</span></h2>
-                        <p>Currently developing a microservice for <strong>local LLM inference</strong> using vLLM to
-                            analyze government contracts. My goal is to apply high-load engineering principles to make
-                            AI efficient and scalable.</p>
+                <div class="panel fade-in-on-scroll" data-title="projects/">
+                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> ls projects/</p>
+                    <div class="section-header">
+                        <h2>What I'm <span class="highlight">Building</span></h2>
+                    </div>
+                    <div class="about-grid projects-grid">
+                        <div class="about-card">
+                            <span class="icon-lg" aria-hidden="true">((o))</span>
+                            <h3><a href="https://eloqo.org" target="_blank" rel="noopener"
+                                    class="experience-link">Eloqo</a></h3>
+                            <p class="role">AI Speech Coach</p>
+                            <p>Coaching for diction, fluency and vocabulary. <strong>Kotlin Multiplatform</strong> +
+                                Compose Multiplatform on Android and iOS, Firebase backend, on-device audio analysis
+                                (pace, WPM) plus AI feedback. Now in closed testing on Google Play.</p>
+                        </div>
+                        <div class="about-card">
+                            <span class="icon-lg" aria-hidden="true">[Aa]</span>
+                            <h3><a href="https://github.com/doqhu/addict" target="_blank" rel="noopener"
+                                    class="experience-link">Addict</a></h3>
+                            <p class="role">Pop-up Dictionary for Linux</p>
+                            <p>Select a word, press a hotkey, and see its meanings, synonyms and pronunciation, with the
+                                sense that fits the sentence. <strong>Rust</strong> + GTK 4, offline dictionaries, OCR
+                                for text in images, optional DeepL. Ships as Flatpak and AppImage.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,15 +326,17 @@
         <!-- Contact Section -->
         <section id="contact" class="contact section-padding">
             <div class="container">
-                <div class="contact-box fade-in-on-scroll">
-                    <h2>Let's build something <span class="highlight">scalable</span>.</h2>
-                    <p>Looking for Backend or AI Engineering roles where performance matters.</p>
+                <div class="panel contact-box fade-in-on-scroll" data-title="contact.sh">
+                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> ./contact.sh</p>
+                    <h2>Let's <span class="highlight">talk</span>.</h2>
+                    <p>Open to <strong>senior Kotlin / Java backend roles</strong> in Barcelona or remote across Europe, with English as the working language.</p>
                     <div class="contact-links">
                         <a href="mailto:ilia.gordeev.dev@gmail.com" class="contact-item">
-                            <i class="fas fa-envelope"></i> ilia.gordeev.dev@gmail.com
+                            <span class="glyph" aria-hidden="true">[@]</span> ilia.gordeev.dev@gmail.com
                         </a>
-                        <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" class="contact-item" target="_blank">
-                            <i class="fab fa-linkedin"></i> /in/ilia-gordeev-dev
+                        <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" class="contact-item" target="_blank"
+                            rel="noopener">
+                            <span class="glyph" aria-hidden="true">[in]</span> /in/ilia-gordeev-dev
                         </a>
                     </div>
                 </div>
@@ -226,12 +345,12 @@
 
         <footer>
             <div class="container footer-content">
-                <p>&copy; 2025 Ilia Gordeev. Built with <i class="fas fa-code"></i> & <i class="fas fa-heart"></i></p>
+                <p>&copy; 2026 Ilia Gordeev. Built with <span class="glyph" role="img"
+                        aria-label="code">&lt;/&gt;</span> &amp; <span class="glyph" role="img"
+                        aria-label="love">&lt;3</span></p>
             </div>
         </footer>
     </main>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
