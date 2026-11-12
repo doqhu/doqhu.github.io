@@ -4,353 +4,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilia Gordeev | Senior Kotlin/Java Backend Engineer</title>
+    <title>Ilia Gordeev | Co-founder of Eloqo</title>
     <meta name="description"
-        content="Senior Kotlin/Java backend engineer in Barcelona: 6 years on an oncology patient-monitoring platform, health-system integrations, HL7 CDA, and my own Kotlin Multiplatform and Rust products.">
-    <meta name="theme-color" content="#0a0803">
-    <!-- Styles -->
+        content="Ilia Gordeev, co-founder of Eloqo, a mobile AI speech coach built on Kotlin Multiplatform, Firebase and Gemini on Vertex AI. Senior Kotlin/Java engineer in Barcelona.">
+    <meta name="theme-color" content="#0b1120">
+    <meta property="og:title" content="Ilia Gordeev | Co-founder of Eloqo">
+    <meta property="og:description"
+        content="I build Eloqo, a mobile AI speech coach, on Kotlin Multiplatform, Firebase and Gemini on Vertex AI.">
+    <meta property="og:type" content="profile">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/eloqo/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <!-- Sets the `js` class before first paint; the rest waits for DOMContentLoaded -->
     <script src="script.js"></script>
-    <!-- ASCII pieces: vendored from ascii.rest (MIT), see assets/ascii/README.md -->
-    <script type="module" src="assets/ascii/ascii.js"></script>
+    <!-- Lets a search engine or a reviewer connect this page, the person and the company -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ilia Gordeev",
+        "jobTitle": "Co-founder",
+        "worksFor": { "@type": "Organization", "name": "Eloqo", "url": "https://eloqo.org" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Barcelona", "addressCountry": "ES" },
+        "sameAs": ["https://www.linkedin.com/in/ilia-gordeev-dev/", "https://eloqo.org/about"]
+    }
+    </script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">IG<span class="dot">.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#stack">Tech Stack</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact" class="btn btn-sm">Contact</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="#top" class="logo">Ilia Gordeev</a>
+            <nav class="nav-links" aria-label="Sections">
+                <a href="#eloqo">Eloqo</a>
+                <a href="#experience">Experience</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="btn btn-outline btn-sm">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> whoami</p>
-                    <div class="badge">Open for Work</div>
-                    <h1>kotlin/java <span class="accent">backend</span> <br> engineer</h1>
-                    <p class="subtitle">Untangling legacy-heavy, integration-heavy systems and modernizing them step by step.</p>
-                    <ascii-art class="piece piece-typewriter" piece="typewriter"
-                        options='{"prefix":"> ","phrases":["oncology patient monitoring","health-system integrations","hl7 cda document exchange","java to kotlin migration","llm microservices","kotlin multiplatform apps"]}'
-                        label="Typewriter cycling through specialities">
-                        <pre role="img" aria-label="Typewriter cycling through specialities">
-
-      &gt; oncology patient monitoring▌
-</pre>
-                    </ascii-art>
-                    <div class="cta-group">
-                        <a href="assets/Ilia_Gordeev_Java_Kotlin_Software_Engineer_CV.pdf" class="btn btn-primary"
-                            download>
-                            <span class="glyph" aria-hidden="true">[v]</span> Download CV
-                        </a>
-                        <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" target="_blank" rel="noopener"
-                            class="btn btn-outline">
-                            <span class="glyph" aria-hidden="true">[in]</span> LinkedIn
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <figure class="frame photo-frame" data-title="IMG_9956.jpeg" data-tag="1261x1681">
-                        <span class="photo-tint"><img src="assets/IMG_9956.jpeg" alt="Ilia Gordeev"
-                                class="hero-image" width="1261" height="1681"></span>
-                    </figure>
-                    <ascii-art class="piece piece-terminal" piece="terminal" label="Animated terminal session">
-                        <pre role="img" aria-label="Terminal session">
-╭─ ilia@bcn: ~ ──────────────────────────────────────────────╮
-│ ilia@bcn ~ $ whoami                                        │
-│ ilia gordeev: senior kotlin/java backend engineer          │
-│ ilia@bcn ~ $ cat stack.txt                                 │
-│ backend  kotlin, java, spring boot, ktor, exposed, kafka   │
-│ integr   rest, soap, protobuf, xml/xsd, hl7 cda            │
-│ data     postgresql, orientdb, sql                         │
-│ mobile   kotlin multiplatform, compose multiplatform       │
-│ systems  rust, gtk 4, linux, flatpak                       │
-│ ai       python, vllm, local inference                     │
-│ ilia@bcn ~ $ uptime                                        │
-│ oncor (medtech): 6 years on oncology patient monitoring    │
-│ ilia@bcn ~ $ echo $TZ                                      │
-│ Europe/Madrid (CET), barcelona                             │
-│ ilia@bcn ~ $ █                                             │
-│                                                            │
-│                                                            │
-╰────────────────────────────────────────────────────────────╯</pre>
-                    </ascii-art>
+    <main id="top">
+        <!-- Hero -->
+        <section class="container hero">
+            <div class="hero-text">
+                <p class="eyebrow">Co-founder, Eloqo · Barcelona, Spain</p>
+                <h1>I build Eloqo, the AI speech coach in your pocket.</h1>
+                <p class="lead">I'm Ilia Gordeev, a senior Kotlin engineer and co-founder of Eloqo. I build the
+                    product end to end: the Android and iOS apps, the Firebase backend and the Gemini review
+                    pipeline. Before Eloqo, I spent six years on the backend of an oncology patient-monitoring
+                    platform.</p>
+                <div class="cta-group">
+                    <a href="https://eloqo.org" target="_blank" rel="noopener" class="btn btn-primary">Visit eloqo.org
+                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12 12 4M5.5 4H12v6.5" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" target="_blank" rel="noopener"
+                        class="btn btn-outline">LinkedIn</a>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <span class="glyph" aria-hidden="true">v</span>
+            <div class="hero-visual">
+                <img src="assets/ilia-gordeev.jpg" alt="Portrait of Ilia Gordeev" class="portrait" width="960"
+                    height="1280">
+                <a href="https://eloqo.org/about" target="_blank" rel="noopener" class="role-card">
+                    <img src="assets/eloqo/icon-192.png" alt="Eloqo app icon" width="48" height="48">
+                    <span>
+                        <strong>Co-founder, Eloqo</strong>
+                        <small>Mar 2026 – Present · listed on eloqo.org/about</small>
+                    </span>
+                </a>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about section-padding">
-            <div class="container">
-                <div class="panel fade-in-on-scroll" data-title="about.txt">
-                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> cat about.txt</p>
-                    <div class="section-header">
-                        <h2>Meet <span class="highlight">Ilia</span></h2>
+        <!-- Eloqo -->
+        <section id="eloqo" class="band">
+            <div class="container eloqo">
+                <div class="eloqo-intro reveal">
+                    <div class="eloqo-copy">
+                        <p class="eyebrow">What I'm building</p>
+                        <h2 class="display">Eloqo is a gym for your speaking muscles.</h2>
+                        <p class="muted">Eloqo is a mobile AI speech coach. You record a short speaking exercise,
+                            such as an articulation drill, a monologue, shadowing or reading aloud. It scores
+                            clarity, fluency, vocabulary and confidence against the transcript, then names one
+                            thing to fix next.</p>
+                        <ol class="steps">
+                            <li><span class="step-n">01</span>
+                                <p><strong>Record a short take.</strong> One to three minutes, from tongue twisters
+                                    to retelling a text from memory.</p>
+                            </li>
+                            <li><span class="step-n">02</span>
+                                <p><strong>See instant numbers.</strong> Pace, filler words and hesitation pauses
+                                    are calculated on the device, free and without an account.</p>
+                            </li>
+                            <li><span class="step-n">03</span>
+                                <p><strong>Ask for a coach review.</strong> Gemini on Vertex AI scores the take,
+                                    annotates the transcript and suggests the next exercise.</p>
+                            </li>
+                        </ol>
                     </div>
-                    <div class="about-grid">
-                        <div class="about-card">
-                            <span class="icon-lg" aria-hidden="true">[::]</span>
-                            <h3>Integration Engineer</h3>
-                            <p>6 years on an <strong>oncology patient-monitoring platform</strong>: heavy integrations
-                                with national and regional health systems and medical document exchange (HL7 CDA).</p>
-                        </div>
-                        <div class="about-card">
-                            <span class="icon-lg" aria-hidden="true">&lt;/&gt;</span>
-                            <h3>Pragmatic Modernizer</h3>
-                            <p>I like messy, legacy-heavy <strong>Kotlin &amp; Java</strong> systems: find the real
-                                constraints, fix what hurts most, and modernize step by step instead of risking a big
-                                rewrite.</p>
-                        </div>
-                        <div class="about-card">
-                            <span class="icon-lg" aria-hidden="true">(@)</span>
-                            <h3>Product Builder</h3>
-                            <p>I ship my own products end to end, from architecture to app-store release. Based in
-                                <strong>Barcelona (CET)</strong>.</p>
-                        </div>
+                    <div class="phones">
+                        <img src="assets/eloqo/01-home.png" alt="Eloqo home screen with average score and today's plan"
+                            width="540" height="1170" loading="lazy">
+                        <img src="assets/eloqo/03-recording.png" alt="Eloqo recording screen during a monologue"
+                            width="540" height="1170" loading="lazy">
+                        <img src="assets/eloqo/04-review.png" alt="Eloqo session review with score breakdown"
+                            width="540" height="1170" loading="lazy">
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Tech Stack Section -->
-        <section id="stack" class="stack section-padding">
-            <div class="container">
-                <div class="panel fade-in-on-scroll" data-title="stack/">
-                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> ls -l stack/</p>
-                    <div class="section-header">
-                        <h2>Tech <span class="highlight">Stack</span></h2>
+                <dl class="facts reveal">
+                    <div>
+                        <dt>Android + iOS</dt>
+                        <dd>One Kotlin Multiplatform codebase</dd>
                     </div>
-                    <div class="stack-layout">
-                        <div class="stack-grid">
-                            <div class="stack-category">
-                                <h3>Backend</h3>
-                                <div class="tags">
-                                    <a href="https://kotlinlang.org/" target="_blank" rel="noopener" class="tag">Kotlin</a>
-                                    <a href="https://dev.java/" target="_blank" rel="noopener" class="tag">Java</a>
-                                    <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener" class="tag">Spring Boot</a>
-                                    <a href="https://ktor.io/" target="_blank" rel="noopener" class="tag">Ktor</a>
-                                    <a href="https://github.com/JetBrains/Exposed" target="_blank" rel="noopener" class="tag">Exposed</a>
-                                    <a href="https://kafka.apache.org/" target="_blank" rel="noopener" class="tag">Kafka</a>
-                                </div>
-                            </div>
-                            <div class="stack-category">
-                                <h3>Integration</h3>
-                                <div class="tags">
-                                    <span class="tag">REST</span>
-                                    <span class="tag">SOAP</span>
-                                    <a href="https://protobuf.dev/" target="_blank" rel="noopener" class="tag">Protobuf</a>
-                                    <span class="tag">JSON</span>
-                                    <span class="tag">XML/XSD</span>
-                                    <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7" target="_blank" rel="noopener" class="tag">HL7 CDA</a>
-                                </div>
-                            </div>
-                            <div class="stack-category">
-                                <h3>Data</h3>
-                                <div class="tags">
-                                    <a href="https://www.postgresql.org/" target="_blank" rel="noopener" class="tag">PostgreSQL</a>
-                                    <a href="https://orientdb.dev/" target="_blank" rel="noopener" class="tag">OrientDB</a>
-                                    <span class="tag">SQL</span>
-                                </div>
-                            </div>
-                            <div class="stack-category">
-                                <h3>Mobile</h3>
-                                <div class="tags">
-                                    <a href="https://kotlinlang.org/docs/multiplatform.html" target="_blank" rel="noopener" class="tag">Kotlin Multiplatform</a>
-                                    <a href="https://www.jetbrains.com/compose-multiplatform/" target="_blank" rel="noopener" class="tag">Compose Multiplatform</a>
-                                    <a href="https://firebase.google.com/" target="_blank" rel="noopener" class="tag">Firebase</a>
-                                </div>
-                            </div>
-                            <div class="stack-category">
-                                <h3>Systems</h3>
-                                <div class="tags">
-                                    <a href="https://www.rust-lang.org/" target="_blank" rel="noopener" class="tag">Rust</a>
-                                    <a href="https://www.gtk.org/" target="_blank" rel="noopener" class="tag">GTK 4</a>
-                                    <a href="https://www.kernel.org/" target="_blank" rel="noopener" class="tag">Linux</a>
-                                    <a href="https://flatpak.org/" target="_blank" rel="noopener" class="tag">Flatpak</a>
-                                </div>
-                            </div>
-                            <div class="stack-category">
-                                <h3>AI / LLM</h3>
-                                <div class="tags">
-                                    <a href="https://www.python.org/" target="_blank" rel="noopener" class="tag">Python</a>
-                                    <a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener" class="tag highlight-tag">vLLM</a>
-                                    <span class="tag">Local Inference</span>
-                                    <a href="https://claude.com/claude-code" target="_blank" rel="noopener" class="tag">Claude Code</a>
-                                </div>
-                            </div>
-                            <div class="stack-category">
-                                <h3>Delivery</h3>
-                                <div class="tags">
-                                    <a href="https://www.docker.com/" target="_blank" rel="noopener" class="tag">Docker</a>
-                                    <a href="https://github.com/features/actions" target="_blank" rel="noopener" class="tag">GitHub Actions</a>
-                                    <a href="https://gradle.org/" target="_blank" rel="noopener" class="tag">Gradle</a>
-                                    <a href="https://maven.apache.org/" target="_blank" rel="noopener" class="tag">Maven</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="stack-logos">
-                            <ascii-art class="piece piece-logo piece-kotlin" piece="kotlin" label="Kotlin logo">
-                                <pre role="img" aria-label="Kotlin logo">
-████████▀
-██████▀
-████▀
-██▀
-████▄
-██████▄
-████████▄</pre>
-                            </ascii-art>
-                            <ascii-art class="piece piece-logo piece-java" piece="java" label="Java logo">
-                                <pre role="img" aria-label="Java logo">
-   ( (
-    ) )
- ┌───────┐
- │       ├┐
- │       ├┘
- └───────┘
- ─────────</pre>
-                            </ascii-art>
-                        </div>
+                    <div>
+                        <dt>In beta testing</dt>
+                        <dd>Open on <a href="https://testflight.apple.com/join/ZpyKG8mx" target="_blank"
+                                rel="noopener">TestFlight</a>, closed on Google Play</dd>
                     </div>
+                    <div>
+                        <dt>English + Russian</dt>
+                        <dd>Practice languages today</dd>
+                    </div>
+                    <div>
+                        <dt>Two co-founders</dt>
+                        <dd>Engineering and speech science</dd>
+                    </div>
+                </dl>
+
+                <div class="cloud reveal">
+                    <div class="cloud-head">
+                        <h3>Built on Google Cloud from day one.</h3>
+                        <p class="muted">Every part of Eloqo outside the phone runs on Google Cloud and Firebase.
+                            The whole backend is serverless, so two people can run it.</p>
+                    </div>
+                    <dl class="services">
+                        <div>
+                            <dt>Vertex AI Gemini API</dt>
+                            <dd>Coach reviews, through Firebase AI Logic</dd>
+                        </div>
+                        <div>
+                            <dt>Cloud Firestore</dt>
+                            <dd>Sessions, scores and cross-device sync</dd>
+                        </div>
+                        <div>
+                            <dt>Cloud Storage</dt>
+                            <dd>Voice recordings</dd>
+                        </div>
+                        <div>
+                            <dt>Cloud Functions</dt>
+                            <dd>Subscription checks, AI quotas, data cleanup</dd>
+                        </div>
+                        <div>
+                            <dt>BigQuery</dt>
+                            <dd>Product metrics exported from Firestore</dd>
+                        </div>
+                        <div>
+                            <dt>Firebase Auth and App Check</dt>
+                            <dd>Sign-in and abuse protection</dd>
+                        </div>
+                        <div>
+                            <dt>Firebase Hosting</dt>
+                            <dd>eloqo.org and the admin console</dd>
+                        </div>
+                        <div>
+                            <dt>Remote Config and Crashlytics</dt>
+                            <dd>Quota tuning and stability monitoring</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="card team reveal">
+                    <div>
+                        <strong>The team</strong>
+                        <p class="muted">I co-founded Eloqo with Julia Lysova, a PhD candidate in computational
+                            linguistics and cognitive science. I lead engineering; Julia leads the speech
+                            methodology.</p>
+                    </div>
+                    <a href="https://eloqo.org/about" target="_blank" rel="noopener" class="btn btn-outline">Meet the
+                        team on eloqo.org</a>
                 </div>
             </div>
         </section>
 
-        <!-- Experience/Highlights Section -->
-        <section id="experience" class="experience section-padding">
-            <div class="container">
-                <div class="panel fade-in-on-scroll" data-title="highlights.log">
-                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> tail -n 4 highlights.log
-                    </p>
-                    <div class="section-header">
-                        <h2>Key <span class="highlight">Highlights</span></h2>
+        <!-- Experience -->
+        <section id="experience" class="container split reveal">
+            <div class="split-head">
+                <p class="eyebrow">Experience</p>
+                <h2>Systems that cannot fail, then a product of my own.</h2>
+            </div>
+            <div class="rows">
+                <article class="row">
+                    <p class="row-label">Mar 2026 – Present</p>
+                    <div class="row-body">
+                        <h3>Co-founder, <a href="https://eloqo.org" target="_blank" rel="noopener">Eloqo</a></h3>
+                        <p>Product and engineering for a mobile AI speech coach: Kotlin Multiplatform apps for
+                            Android and iOS, a serverless Firebase backend, the Gemini review pipeline,
+                            subscriptions on Google Play and the App Store, and the website and admin console.</p>
                     </div>
-                    <div class="highlights-layout">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h3><a href="https://oncor.pro/" target="_blank" rel="noopener"
-                                            class="experience-link">Oncor (MedTech)</a></h3>
-                                    <p class="role">Oncology Patient Monitoring</p>
-                                    <p>6 years building and running a hybrid backend with <strong>heavy integrations</strong> with national and regional health systems and business-critical workflows.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h3>Medical Data Exchange</h3>
-                                    <p class="role">HL7 CDA &amp; Integrations</p>
-                                    <p>Built APIs and integrations over <strong>REST, SOAP, Protobuf and XML/XSD</strong>, on PostgreSQL and OrientDB.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h3>Modernization Leader</h3>
-                                    <p class="role">Java to Kotlin Migration</p>
-                                    <p>Led a migration that cut production bugs by <strong>~20%</strong> and sped up the team.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-content">
-                                    <h3>LLM Microservice</h3>
-                                    <p class="role">Government Contract Analysis</p>
-                                    <p><strong>Batch inference</strong>, message-driven processing and containerized deployment.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uptime-slot">
-                        <ascii-art class="piece piece-uptime" piece="uptime-bar"
-                            options='{"services":["integrations","documents","records"]}' label="Animated uptime bars">
-                            <pre role="img" aria-label="Uptime bars">
-
-  all systems operational
-
-  integrations                                     operational
-  ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌
-
-  documents                                        operational
-  ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌
-
-  records                                          operational
-  ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌</pre>
-                        </ascii-art>
-                        </div>
+                </article>
+                <article class="row">
+                    <p class="row-label">6 years</p>
+                    <div class="row-body">
+                        <h3>Senior backend engineer, <a href="https://oncor.pro/" target="_blank"
+                                rel="noopener">Oncor</a></h3>
+                        <p>Backend of an oncology patient-monitoring platform with heavy integrations with
+                            national and regional health systems.</p>
+                        <ul>
+                            <li>Built medical document exchange on HL7 CDA, over REST, SOAP, Protobuf and XML/XSD,
+                                on PostgreSQL and OrientDB.</li>
+                            <li>Led the Java to Kotlin migration, which cut production bugs by about 20%.</li>
+                            <li>Built an LLM microservice for government contract analysis: batch inference,
+                                message-driven processing, containerized deployment.</li>
+                        </ul>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects section-padding">
-            <div class="container">
-                <div class="panel fade-in-on-scroll" data-title="projects/">
-                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> ls projects/</p>
-                    <div class="section-header">
-                        <h2>What I'm <span class="highlight">Building</span></h2>
-                    </div>
-                    <div class="about-grid projects-grid">
-                        <div class="about-card">
-                            <span class="icon-lg" aria-hidden="true">((o))</span>
-                            <h3><a href="https://eloqo.org" target="_blank" rel="noopener"
-                                    class="experience-link">Eloqo</a></h3>
-                            <p class="role">AI Speech Coach</p>
-                            <p>Coaching for diction, fluency and vocabulary. <strong>Kotlin Multiplatform</strong> +
-                                Compose Multiplatform on Android and iOS, Firebase backend, on-device audio analysis
-                                (pace, WPM) plus AI feedback. Now in closed testing on Google Play.</p>
-                        </div>
-                        <div class="about-card">
-                            <span class="icon-lg" aria-hidden="true">[Aa]</span>
-                            <h3><a href="https://github.com/doqhu/addict" target="_blank" rel="noopener"
-                                    class="experience-link">Addict</a></h3>
-                            <p class="role">Pop-up Dictionary for Linux</p>
-                            <p>Select a word, press a hotkey, and see its meanings, synonyms and pronunciation, with the
-                                sense that fits the sentence. <strong>Rust</strong> + GTK 4, offline dictionaries, OCR
-                                for text in images, optional DeepL. Ships as Flatpak and AppImage.</p>
-                        </div>
-                    </div>
+        <!-- Stack -->
+        <section id="stack" class="container split reveal">
+            <div class="split-head">
+                <p class="eyebrow">Stack</p>
+                <h2>Kotlin, front to back.</h2>
+            </div>
+            <dl class="rows rows-tight">
+                <div class="row">
+                    <dt class="row-label">Mobile</dt>
+                    <dd class="row-body">Kotlin Multiplatform, Compose Multiplatform, Room, Koin</dd>
+                </div>
+                <div class="row">
+                    <dt class="row-label">Cloud</dt>
+                    <dd class="row-body">Firebase, Cloud Functions (TypeScript), Firestore, BigQuery, Vertex AI</dd>
+                </div>
+                <div class="row">
+                    <dt class="row-label">Backend</dt>
+                    <dd class="row-body">Kotlin, Java, Spring Boot, Ktor, Exposed, Kafka</dd>
+                </div>
+                <div class="row">
+                    <dt class="row-label">Integration</dt>
+                    <dd class="row-body">REST, SOAP, Protobuf, XML/XSD, HL7 CDA</dd>
+                </div>
+                <div class="row">
+                    <dt class="row-label">Data</dt>
+                    <dd class="row-body">PostgreSQL, OrientDB, SQL</dd>
+                </div>
+                <div class="row">
+                    <dt class="row-label">AI</dt>
+                    <dd class="row-body">Gemini, Python, vLLM, local inference</dd>
+                </div>
+                <div class="row">
+                    <dt class="row-label">Systems and delivery</dt>
+                    <dd class="row-body">Rust, GTK 4, Linux, Docker, GitHub Actions, Gradle</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="container split reveal">
+            <div class="split-head">
+                <p class="eyebrow">Also building</p>
+                <h2>Open source.</h2>
+            </div>
+            <article class="card project">
+                <h3><a href="https://github.com/doqhu/addict" target="_blank" rel="noopener">Addict</a>, a pop-up
+                    dictionary for Linux</h3>
+                <p class="muted">Select a word, press a hotkey, and see its meanings, synonyms and pronunciation,
+                    with the sense that fits the sentence. Rust and GTK 4, offline dictionaries, OCR for text in
+                    images, optional DeepL. Ships as Flatpak and AppImage.</p>
+            </article>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="band">
+            <div class="container contact reveal">
+                <h2 class="display">Let's talk about Eloqo.</h2>
+                <p class="lead">For anything about the product, partnerships or the engineering behind it, write
+                    to me directly.</p>
+                <div class="contact-links">
+                    <a href="mailto:ilia.gordeev.dev@gmail.com">ilia.gordeev.dev@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" target="_blank"
+                        rel="noopener">linkedin.com/in/ilia-gordeev-dev</a>
+                    <a href="https://eloqo.org" target="_blank" rel="noopener">eloqo.org</a>
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding">
-            <div class="container">
-                <div class="panel contact-box fade-in-on-scroll" data-title="contact.sh">
-                    <p class="prompt-line" aria-hidden="true"><span class="prompt">$</span> ./contact.sh</p>
-                    <h2>Let's <span class="highlight">talk</span>.</h2>
-                    <p>Open to <strong>senior Kotlin / Java backend roles</strong> in Barcelona or remote across Europe, with English as the working language.</p>
-                    <div class="contact-links">
-                        <a href="mailto:ilia.gordeev.dev@gmail.com" class="contact-item">
-                            <span class="glyph" aria-hidden="true">[@]</span> ilia.gordeev.dev@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/ilia-gordeev-dev/" class="contact-item" target="_blank"
-                            rel="noopener">
-                            <span class="glyph" aria-hidden="true">[in]</span> /in/ilia-gordeev-dev
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container footer-content">
-                <p>&copy; 2026 Ilia Gordeev. Built with <span class="glyph" role="img"
-                        aria-label="code">&lt;/&gt;</span> &amp; <span class="glyph" role="img"
-                        aria-label="love">&lt;3</span></p>
-            </div>
-        </footer>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <span>&copy; 2026 Ilia Gordeev</span>
+            <span>Barcelona, Spain</span>
+        </div>
+    </footer>
 </body>
 
 </html>

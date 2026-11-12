@@ -3,17 +3,12 @@
 document.documentElement.classList.add('js');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
+    const revealElements = document.querySelectorAll('.reveal');
 
     if (!('IntersectionObserver' in window)) {
-        fadeElements.forEach(el => el.classList.add('visible'));
+        revealElements.forEach(el => el.classList.add('visible'));
         return;
     }
-
-    const observerOptions = {
-        threshold: 0.05,
-        rootMargin: '0px 0px -50px 0px'
-    };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -22,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, {
+        threshold: 0.05,
+        rootMargin: '0px 0px -50px 0px'
+    });
 
-    fadeElements.forEach(el => observer.observe(el));
-
-    console.log("%cHello there! 👋 looking for clean code?", "font-family: monospace; font-size: 20px; font-weight: bold; color: #ffb000; background: #0a0803;");
-    console.log("Feel free to inspect the source. It's built with vanilla JS & CSS for maximum performance, just like my backends.");
+    revealElements.forEach(el => observer.observe(el));
 });
